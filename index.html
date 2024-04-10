@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Sample Meeting Minutes </title>
+    <meta charset = "UTF-8">
+    <meta name ="author" content="Wilson Sugiarto">
+    <link rel="icon" href="favicon.png">
+  </head>
+  <body>
+    
+    <header>
+        <h1>Meeting Minutes</h1>
+        <p>Date Taken: April 10 2024</p>
+    </header>
+
+    <main>
+        <h2>Overview</h2>
+        <p>Meeting minutes for upcoming project. 
+            Discussion of role management and brand ideas.
+
+
+        </p>
+        <p>Related documents:</p>    
+      <nav>
+        <ul>
+          <li><a href="/README.md">README</a></li>
+          <li><a href="favicon.png">favicon</a></li>
+        </ul>
+      </nav>
+      
+        
+        <h4>Elements Checklist:</h4>
+        <ul>
+            <li>title</li>
+            <li>meta</li>
+            <li>link</li>
+            <li>main</li>
+            <li>h1h2h3 (still need h3) </li>
+            <li>header footer</li>
+            <li>section</li>
+            <li>div, span</li>
+            <li>p</li>
+            <li>ul, ol, li</li>
+            <li>b, strong, i, em, a, br</li>
+            <li>details, summary</li>
+
+        </ul>
+
+        
+    </main>
+
+    <hr>
+
+    <section>
+        <h2>Attendance</h2>
+        <p>
+            Full Attendance today!
+        </p>
+        <h2>Meeting Agenda</h2>
+        <p>Attendance -> discuss role management (continuation from last meeting) -> discuss ideas for the brand</p>
+        
+        <h2>New information</h2>
+        <p>New objectives have been set for next Monday, including team bonding and video making.</p>
+        <p>We have decided to choose the image below as our favicon</p>
+        <img src="favicon.png" alt="new favicon">
+        <p>Meeting MP3:</p>
+        <audio controls>
+            <source src="meeting.mp4" type="audio/mp3">
+        </audio>
+        <br><p>Meeting MP4</p>
+        <video width="400" controls>
+            <source src="meeting.mp4" type="video/mp4">
+            
+            Your browser does not support HTML video.
+          </video>
+
+    </section>
+
+    <hr>
+
+    <div>
+        <h2>Role Management</h2>
+        <p>These are the students who have been chosen as the <strong>leaders.</strong>
+            These students were chosen as leaders based off the skills we inferred they have
+            from the google forms.
+        
+        </p>
+        <h3>Leaders:</h3>
+        <ol>
+            <li><span style="font-weight: bold;">Daniil </span>Katulevskiy</li>
+            <li><span style="font-weight: bold;">Matthew</span> Fang</li>
+        </ol>
+        <h3>Designer:</h3>
+        <p><b>Wilson</b> Sugiarto</p>
+        <h3>Developers</h3>
+        <p>
+            <em>Everyone</em> else has been assigned as <i>developers</i>. 
+            <br>
+            Developers will do a multitude of demanding tasks such as brainstorming and coding.
+        </p>
+    </div>
+    <hr>
+
+    <details>
+        <summary><strong>Key Takeaways</strong></summary>
+        <p>Leaders, Designer and Developerse roles have been allocated.</p>
+    </details>
+
+    <hr>
+    <h2>Sample Form</h2>
+    <form action="https://canvas.ucsd.edu/courses/54609/assignments/778836">
+        <fieldset>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+
+            <label for="ingroup">Are you in the group?</label>
+            <input type="checkbox" id="ingroup" name="ingroup"><br><br>
+
+            <label for="Yes?">Yes?</label>
+            <input type="radio" id="Yes?" name="Yes?"><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <p><label for="textarea">Write some words</label></p>
+            <textarea id="textarea" name="textarea" rows="1" cols="25">Write some words</textarea><br><br>
+
+            <label for="day">The day you filled this out</label>
+            <input list="days" name="day" id="day">
+            <datalist id="days">
+                <option value="Mon">
+                <option value="Tue">
+                <option value="Wed">
+                <option value="Thur">
+                <option value="Fri">
+            </datalist> <br><br>
+
+            <label for="days">Choose a day again:</label>
+            <select name="days" id="days">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select> <br><br>
+
+            <input type="submit" value="Submit"> <br>
+            <button type="button" onclick="alert('WRONG BUTTON!')">Or is it this submit?</button>
+        </fieldset>
+      </form>
+
+    <footer>
+        <p>Note Taker: Wilson Sugiarto</p>
+    </footer>
+  </body>
+</html>
