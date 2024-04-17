@@ -1,21 +1,20 @@
-body {
-    
-  }
+
   
 :root {
     --main-color: maroon; 
 }
 
 main{
-    margin: 90px auto; /* shorthand for margin */
-    padding: 30px; /* shorthand for padding */
+    margin: 90px auto; 
+    padding: 30px; 
+    
 }
 
 section{
-    margin-top: 50px; /* longhand for margin */
+    margin-top: 50px; 
     margin-bottom: 10px;
     
-    padding-top: 5px; /* longhand for padding */
+    padding-top: 5px; 
     padding-bottom: 5px;
 
     border-style: solid;
@@ -33,6 +32,9 @@ h1 {
     color: #ab1414;
     margin-bottom: 1mm;
     
+  }
+  h2#special{
+    color:#14f751;
   }
   h3 {
     color: hsl(239, 75%, 40%); /*Makes h3 blue*/
@@ -66,14 +68,14 @@ h1 {
   }
   
   nav ul {
-    display: flex; /* Apply flex layout */
-    justify-content: space-between; /* Flexbox attribute */
-    align-items: center; /* Flexbox attribute */
-    flex-wrap: wrap; /* Flexbox attribute */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap;
   }
 
   div ol{
-    display: grid; /* Apply flex layout */
+    display: grid;
     column-gap: 5px;
     row-gap: 5px;
     justify-items: center;
@@ -83,13 +85,9 @@ h1 {
 
   @media (max-width: 768px) {
     body {
-        background-color: #d4d4f3; /* Lighter background for mobile */
+        background-color: #d4d4f3; 
     }
    }
-   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-    body {
-    font-family: 'Roboto', sans-serif;
-    }
 
   form{
     color: color(colorspace rgb(rgb(128, 0, 53)17, 17) rgb(128, 0, 85) rgb(255, 0, 72));
@@ -104,9 +102,65 @@ h1 {
     text-align: center;
     position: relative;
     top: 50px;
-}
+  }
 
-footer p {
+  footer p {
     font-size: 1.5em; 
     margin: 1em 0; 
+  }
+  .footer-note{
+    color: aqua;
+  }
+
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    
+}
+li[class = "yellow highlight"]{
+    background-color: yellow;
+}
+
+p:hover {
+    background-color: color(display-p3 1 0.5 0);;
+}
+
+h1, h2, h3 {
+    margin-top: 10px;
+    
+}
+/* Descendant Combinator  */
+nav ul li { 
+    
+    font-size: larger;
+}
+/* Child Combinator */
+header > h1{ 
+    font-size: 250%;
+}
+/* General sibling comb */
+h1 ~ p {
+    margin-top: 0;
+}
+/* Adjacent sibling */
+h1 + p {
+    font-style: italic;
+}
+/* combining two selectors */
+ol > li[class="a"] {
+    background-color: #ab1414;
+}
+/*:has()  */
+
+li:has(span) {
+    color:rgb(14, 153, 107);
+}
+/* Nested Selectors */
+nav ul{
+    background: #eee;
+    padding: 10px;
+    
+    li{
+        margin: 5px;
+        padding: 5px;
+    }
 }
