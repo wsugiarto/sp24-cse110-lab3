@@ -4,6 +4,7 @@
     --main-color: maroon; 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 main{
     margin: 90px auto; 
     padding: 30px; 
@@ -41,7 +42,8 @@ h1 {
     margin-top: 1cm;
   }
   p{
-    color:color-mix(in srgb, rgba(0, 0, 0, 0.8), rgba(0, 8, 11, 0.5) 100%);
+    /* color:color-mix(in srgb, rgba(0, 0, 0, 0.8), rgba(0, 8, 11, 0.5) 100%); */
+    color:color-mix(in lch, plum, pink);
     margin: 10px;
   }
 
@@ -90,7 +92,7 @@ h1 {
    }
 
   form{
-    color: color(colorspace rgb(rgb(128, 0, 53)17, 17) rgb(128, 0, 85) rgb(255, 0, 72));
+    color:rgb(14, 153, 107);
     margin-right: 1000px;
     position: static;
     left:  50px
@@ -109,11 +111,11 @@ h1 {
     margin: 1em 0; 
   }
   .footer-note{
-    color: aqua;
+    color: color(display-p3 1 0.5 0);
   }
 
 *{
-    font-family: "Roboto Condensed", sans-serif;
+  font-family: "Oswald", sans-serif;
     
 }
 li[class = "yellow highlight"]{
@@ -121,7 +123,7 @@ li[class = "yellow highlight"]{
 }
 
 p:hover {
-    background-color: color(display-p3 1 0.5 0);;
+    background-color: aquamarine;
 }
 
 h1, h2, h3 {
@@ -159,8 +161,8 @@ nav ul{
     background: #eee;
     padding: 10px;
     
-    li{
-        margin: 5px;
-        padding: 5px;
+    & li{
+        margin: 10px;
+        padding: 10px;
     }
 }
