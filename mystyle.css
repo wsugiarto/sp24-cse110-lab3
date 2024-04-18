@@ -43,8 +43,8 @@ h1 {
   }
   p{
     /* color:color-mix(in srgb, rgba(0, 0, 0, 0.8), rgba(0, 8, 11, 0.5) 100%); */
-    color:color-mix(in lch, plum, pink);
-    margin: 10px;
+    color:color-mix(in lch, plum, pink 50%);
+    margin: auto;
   }
 
   nav{
@@ -87,7 +87,8 @@ h1 {
 
   @media (max-width: 768px) {
     body {
-        background-color: #d4d4f3; 
+        /* background-color: #d4d4f3;  */
+        background-color: #3100f3; 
     }
    }
 
