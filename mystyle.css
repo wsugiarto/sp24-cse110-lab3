@@ -1,10 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
   
 :root {
     --main-color: maroon; 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 main{
     margin: 90px auto; 
     padding: 30px; 
